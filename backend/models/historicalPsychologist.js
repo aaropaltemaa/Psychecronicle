@@ -27,6 +27,9 @@ const historicalPsychologistSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  quotes: {
+    type: [String], // Array of quotes by the psychologist
+  },
   image: {
     type: String, // URL or path to an image of the psychologist
   },

@@ -6,6 +6,18 @@ psychologistRouter.get("/", async (request, response) => {
   response.json(psychologists);
 });
 
+psychologistRouter.get("/quotes", async (request, response) => {
+  const psychologists = await HistoricalPsychologist.find(
+    {},
+    "name quotes -_id"
+  );
+  const quotes = psychologists.map((psychologist) => ({
+    name: psychologist.name,
+    quotes: psychologist.quotes,
+  }));
+  response.json(quotes);
+});
+
 psychologistRouter.get("/:id", async (request, response) => {
   const psychologist = await HistoricalPsychologist.findById(request.params.id);
   if (psychologist) {
@@ -26,6 +38,7 @@ psychologistRouter.post("/", async (request, response) => {
     deathDate: body.deathDate,
     field: body.field,
     contribution: body.contribution,
+    quotes: body.quotes,
     image: body.image,
     wikipediaUrl: body.wikipediaUrl,
   });

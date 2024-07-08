@@ -9,6 +9,11 @@ Content-Type: application/json
   "deathDate": "1980-09-16",
   "field": "Developmental Psychology",
   "contribution": "Cognitive Development Theory",
+  "quotes": [
+      "Play is the work of childhood.",
+      "Intelligence is what you use when you don't know what to do.",
+      "What we see changes what we know. What we know changes what we see."
+  ],
   "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Jean_Piaget_1950s.jpg",
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Jean_Piaget"
 }
