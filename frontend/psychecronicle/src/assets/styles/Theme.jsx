@@ -1,16 +1,57 @@
 import { createTheme } from '@mui/material/styles';
+import { blue } from '@mui/material/colors';
+
+const drawerWidth = 0;
 
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#f44336',
+            main: blue[400],
         },
         secondary: {
-            main: '#3f51b5',
+            main: blue[200],
         },
-        text: {
-            primary: '#000000', // Set primary text color to black
+    },
+    components: {
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    textTransform: 'none',
+                    borderRadius: '20px',
+                    fontSize: '1.2rem',
+                },
+                contained: {
+                    '&:hover': {
+                        backgroundColor: blue[200],
+                    },
+                },
+            },
         },
+        MuiAppBar: {
+            styleOverrides: {
+                root: {
+                    width: `calc(100% - ${drawerWidth}px)`,
+                    marginLeft: drawerWidth,
+                    background: 'white',
+                    color: 'black',
+                    elevation: 0,
+                    boxShadow: 'none',
+                },
+            },
+        },
+        MuiToolBar: {
+            styleOverrides: {
+                root: {
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    background: 'white',
+                    color: 'black',
+                    elevation: 0,
+                    boxShadow: 'none',
+                },
+            },
+        }
     },
     typography: {
         fontFamily: 'Poppins',

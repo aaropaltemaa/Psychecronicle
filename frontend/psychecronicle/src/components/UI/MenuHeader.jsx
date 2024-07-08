@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
-import StyledAppBar from './StyledAppBar';
-import StyledToolBar from './StyledToolBar';
 import Avatar from '@mui/material/Avatar';
 import freudImage from '../../assets/images/freud.jpg';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
 
 const MenuHeader = () => {
     return (
-        <StyledAppBar position="fixed">
-            <StyledToolBar>
+        <AppBar position="fixed">
+            <Toolbar>
                 <div style={{ flex: 0.91, display: 'flex', justifyContent: 'center', marginTop: 10 }}>
                     <Avatar src={freudImage} alt="Freud" sx={
                         {
@@ -50,8 +50,8 @@ const MenuHeader = () => {
                         Concepts
                     </Button>
                 </div>
-            </StyledToolBar>
-        </StyledAppBar>
+            </Toolbar>
+        </AppBar>
     )
 }
 

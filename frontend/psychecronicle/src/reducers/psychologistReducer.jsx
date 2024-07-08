@@ -7,7 +7,7 @@ const psychologistsSlice = createSlice({
     reducers: {
         setPsychologists: (state, action) => {
             return action.payload;
-        }
+        },
     }
 });
 
@@ -17,6 +17,7 @@ export const initalizePsychologists = () => {
         dispatch(setPsychologists(psychologists));
     };
 };
+
 
 export const { setPsychologists } = psychologistsSlice.actions;
 

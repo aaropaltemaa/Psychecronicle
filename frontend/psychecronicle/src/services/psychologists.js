@@ -7,4 +7,14 @@ const getAll = async () => {
   return response.data;
 };
 
-export default { getAll };
+const getQuotes = async () => {
+  const response = await axios.get(`${baseUrl}/quotes`);
+  return response.data;
+};
+
+const getPsychologist = async (id) => {
+  const response = await axios.get(`${baseUrl}/${id}`);
+  return response.data;
+};
+
+export default { getAll, getQuotes, getPsychologist };
