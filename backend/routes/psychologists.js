@@ -6,4 +6,36 @@ psychologistRouter.get("/", async (request, response) => {
   response.json(psychologists);
 });
 
+psychologistRouter.get("/:id", async (request, response) => {
+  const psychologist = await HistoricalPsychologist.findById(request.params.id);
+  if (psychologist) {
+    response.json(psychologist);
+  } else {
+    response.status(404).end();
+  }
+});
+
+psychologistRouter.post("/", async (request, response) => {
+  const body = request.body;
+
+  const psychologist = new HistoricalPsychologist({
+    name: body.name,
+    biography: body.biography,
+    nationality: body.nationality,
+    birthDate: body.birthDate,
+    deathDate: body.deathDate,
+    field: body.field,
+    contribution: body.contribution,
+    image: body.image,
+    wikipediaUrl: body.wikipediaUrl,
+  });
+
+  try {
+    const savedPsychologist = await psychologist.save();
+    response.status(201).json(savedPsychologist);
+  } catch (error) {
+    response.status(400).send({ error: error.message });
+  }
+});
+
 module.exports = psychologistRouter;

@@ -5,6 +5,10 @@ const historicalPsychologistSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  biography: {
+    type: String,
+    required: true,
+  },
   nationality: {
     type: String,
     required: true,
@@ -33,11 +37,6 @@ const historicalPsychologistSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-});
-
-historicalPsychologistSchema.pre("save", function (next) {
-  this.createdAt = new Date();
-  next();
 });
 
 historicalPsychologistSchema.set("toJSON", {
