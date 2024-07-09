@@ -12,9 +12,9 @@ const getQuotes = async () => {
   return response.data;
 };
 
-const getPsychologist = async (id) => {
+const getOne = async (id) => {
   const response = await axios.get(`${baseUrl}/${id}`);
   return response.data;
 };
 
-export default { getAll, getQuotes, getPsychologist };
+export default { getAll, getQuotes, getOne };

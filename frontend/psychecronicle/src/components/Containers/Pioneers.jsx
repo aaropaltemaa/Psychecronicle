@@ -34,7 +34,7 @@ const PioneerList = () => {
     return (
         <div style={{ marginRight: 1000, marginTop: 50 }}>
             {psychologists.map(p => (
-                <div key={p.id} style={{ marginBottom: '50px' }}> {/* Add margin here */}
+                <div key={p.id} style={{ marginBottom: '50px' }}>
                     <PioneerCard psychologistId={p.id} />
                 </div>
             ))}

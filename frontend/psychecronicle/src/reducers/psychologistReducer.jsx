@@ -8,6 +8,9 @@ const psychologistsSlice = createSlice({
         setPsychologists: (state, action) => {
             return action.payload;
         },
+        setOne: (state, action) => {
+            return [...state, action.payload];
+        }
     }
 });
 
@@ -18,8 +21,14 @@ export const initializePsychologists = () => {
     };
 };
 
+export const getPsychologist = (id) => {
+    return async dispatch => {
+        const psychologist = await psychologistService.getOne(id);
+        dispatch(setOne(psychologist));
+    };
+}
 
-export const { setPsychologists } = psychologistsSlice.actions;
+export const { setPsychologists, setOne } = psychologistsSlice.actions;
 
 export default psychologistsSlice.reducer;
 

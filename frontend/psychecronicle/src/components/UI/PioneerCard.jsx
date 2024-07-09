@@ -2,6 +2,7 @@ import Grid from '@mui/material/Grid';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import { useSelector } from "react-redux";
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 
@@ -29,11 +30,9 @@ const PioneerCard = ({ psychologistId }) => {
         return null;
     }
 
-    // Convert ISO strings to Date objects
     const birthDate = new Date(psychologist.birthDate);
     const deathDate = new Date(psychologist.deathDate);
 
-    // Format dates to readable strings
     const formattedBirthDate = birthDate.toLocaleDateString("en-US", { year: 'numeric', month: 'long', day: 'numeric' });
     const formattedDeathDate = deathDate.toLocaleDateString("en-US", { year: 'numeric', month: 'long', day: 'numeric' });
 
@@ -44,9 +43,16 @@ const PioneerCard = ({ psychologistId }) => {
                 <Avatar src={psychologistImage} alt={psychologist.name} style={{ width: 100, height: 100 }} />
             </Grid>
             <Grid item xs>
-                <Typography variant="h5" color="inherit" sx={{ fontWeight: "bold" }}>
-                    {psychologist.name}
-                </Typography>
+                <Link to={`/psychologists/${psychologist.id}`} style={{ textDecoration: 'none' }}>
+                    <Typography variant="h5" color="black" sx={{
+                        fontWeight: "bold", "&:hover": {
+                            color: "primary.main",
+
+                        }
+                    }}>
+                        <u>{psychologist.name}</u>
+                    </Typography>
+                </Link>
                 <Typography variant="h6" color="primary">
                     {`${formattedBirthDate} - ${formattedDeathDate}`}
                 </Typography>
@@ -67,4 +73,4 @@ PioneerCard.propTypes = {
     psychologistId: PropTypes.string.isRequired
 };
 
-export default PioneerCard;
+export default PioneerCard 
