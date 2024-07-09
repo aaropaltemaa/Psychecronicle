@@ -13,6 +13,11 @@ Psychecronicle is an application that aims to provide a comprehensive database o
 - **Backend**: [Node.js](https://nodejs.org/) with [Express](https://expressjs.com/)
 - **Database**: [MongoDB](https://www.mongodb.com/)
 
+## To do list
+- **Pagination**
+- **Search and filter**
+- **Most viewed psychologist drawer**
+  
 
 
 
