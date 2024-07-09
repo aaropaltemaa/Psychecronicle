@@ -6,33 +6,7 @@ import { Divider, Grid, Typography } from '@mui/material';
 import { blue } from '@mui/material/colors';
 import EventSubheading from '../UI/EventSubHeading';
 import React from 'react';
-
-const getEventTitleMapping = (psychologistId) => {
-    const mappings = {
-        '668c2d51b169a298a9977465': {
-            event1: "Custom Title 1 for Psychologist 1",
-            event2: "Custom Title 2 for Psychologist 1",
-        },
-        '668c771bf8cce054610eda34': {
-            event1: "Custom Title 1 for Psychologist 2",
-            event2: "Custom Title 2 for Psychologist 2",
-        },
-        '668d478c946d5f8d4e28d289': {
-            event1: "Custom Title 1 for Psychologist 3",
-            event2: "Custom Title 2 for Psychologist 3",
-        },
-        '668d48de946d5f8d4e28d290': {
-            event1: "Custom Title 1 for Psychologist 4",
-            event2: "Custom Title 2 for Psychologist 4",
-        },
-    };
-
-    // Return the mapping for the given psychologist ID, or a default mapping if not found
-    return mappings[psychologistId] || {
-        event1: "Default Custom Title 1",
-        event2: "Default Custom Title 2",
-    };
-};
+import getEventTitleMapping from '../../utils/eventTitleMappings';
 
 const Pioneer = () => {
     const { id } = useParams();
@@ -58,7 +32,7 @@ const Pioneer = () => {
                     </Grid>
                     <Grid item xs={12} container spacing={2}>
                         <Grid item xs={6}>
-                            <Typography variant="h4" style={{ fontWeight: "bold", marginTop: "-150px" }}>
+                            <Typography variant="h4" style={{ fontSize: "2.5rem", fontWeight: "bold", marginTop: "-150px" }}>
                                 {psychologist.name}
                             </Typography>
                             <Divider sx={{ backgroundColor: blue[400], height: '2px', my: 2 }} />
