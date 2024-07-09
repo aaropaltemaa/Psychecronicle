@@ -1,7 +1,7 @@
 import { createTheme } from '@mui/material/styles';
 import { blue } from '@mui/material/colors';
 
-const drawerWidth = 0;
+const drawerWidth = 240;
 
 const theme = createTheme({
     palette: {
@@ -18,7 +18,8 @@ const theme = createTheme({
                 root: {
                     textTransform: 'none',
                     borderRadius: '20px',
-                    fontSize: '1.2rem',
+                    fontSize: '1.3rem',
+                    fontWeight: 700,
                 },
                 contained: {
                     '&:hover': {
@@ -51,18 +52,38 @@ const theme = createTheme({
                     boxShadow: 'none',
                 },
             },
-        }
+        },
+        MuiCard: {
+            styleOverrides: {
+                root: {
+                    padding: '20px',
+                    margin: '20px',
+                    backgroundColor: blue[50],
+                    marginRight: 600,
+                    boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)',
+                },
+            },
+        },
+        MuiList: {
+            styleOverrides: {
+                root: {
+                    width: '100%',
+                    maxWidth: 500,
+                    bgcolor: 'background.paper',
+                },
+            },
+        },
     },
     typography: {
         fontFamily: 'Poppins',
         fontSize: 14,
         h1: {
-            fontSize: '2.5rem',
-            fontWeight: 500,
+            fontSize: '3.5rem',
+            fontWeight: 700,
         },
         h2: {
             fontSize: '2rem',
-            fontWeight: 500,
+            fontWeight: 600,
         },
         h3: {
             fontSize: '1.75rem',
@@ -77,7 +98,7 @@ const theme = createTheme({
             fontWeight: 500,
         },
         h6: {
-            fontSize: '1rem',
+            fontSize: '1.15rem',
             fontWeight: 500,
         },
         body1: {

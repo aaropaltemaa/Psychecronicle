@@ -1,10 +1,10 @@
-import MenuHeader from "../UI/MenuHeader";
 import Quotes from "./Quotes";
+import WelcomeText from "./WelcomeText";
 
 const Menu = () => {
     return (
         <div>
-            <MenuHeader />
+            <WelcomeText />
             <Quotes />
         </div>
     )

@@ -4,48 +4,44 @@ import Avatar from '@mui/material/Avatar';
 import freudImage from '../../assets/images/freud.jpg';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
+import { Typography } from '@mui/material';
 
 const MenuHeader = () => {
     return (
-        <AppBar position="fixed">
+        <AppBar position="static" >
             <Toolbar>
-                <div style={{ flex: 0.91, display: 'flex', justifyContent: 'center', marginTop: 10 }}>
-                    <Avatar src={freudImage} alt="Freud" sx={
-                        {
-                            width: 100,
-                            height: 100
+                <div style={{ display: 'flex', justifyContent: 'center', marginTop: 10, marginLeft: 15 }}>
+                    <Link to="/">
+                        <Avatar src={freudImage} alt="Freud" sx={
+                            {
+                                width: 100,
+                                height: 100
+                            }
                         }
-                    }
-                    />
-                    <Button
-                        color="inherit"
-                        component={Link}
-                        to="/"
-                        sx={{ fontSize: 30, textTransform: 'none' }}
-                    >
+                        />
+                    </Link>
+                    <Typography color="primary" variant="h2" sx={{ marginLeft: 3, marginTop: 4 }}>
                         Psychecronicle
-                    </Button>
+                    </Typography>
                     <Button
-                        color="inherit"
+                        color="primary"
                         component={Link}
                         to="/psychologists"
-                        sx={{ fontSize: 20, marginLeft: 80, textTransform: 'none' }}
+                        sx={{ marginLeft: 80 }}
                     >
                         Pioneers
                     </Button>
                     <Button
-                        color="inherit"
+                        color="primary"
                         component={Link}
                         to="/search"
-                        sx={{ fontSize: 20, textTransform: 'none' }}
                     >
                         Search
                     </Button>
                     <Button
-                        color="inherit"
+                        color="primary"
                         component={Link}
                         to="/concepts"
-                        sx={{ fontSize: 20, textTransform: 'none' }}
                     >
                         Concepts
                     </Button>

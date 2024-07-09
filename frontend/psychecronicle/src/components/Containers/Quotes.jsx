@@ -31,8 +31,8 @@ const Quotes = () => {
     };
 
     return (
-        <Box>
-            <div style={{ marginTop: 500 }} />
+        <Box sx={{ marginRight: '20px' }}>
+            <div style={{ marginTop: 160 }} />
             <Button variant="contained" onClick={handleClick}>Show Random Quote</Button>
             <div style={{ marginTop: 15 }} />
             <Typography variant="h4">

@@ -11,7 +11,7 @@ const psychologistsSlice = createSlice({
     }
 });
 
-export const initalizePsychologists = () => {
+export const initializePsychologists = () => {
     return async dispatch => {
         const psychologists = await psychologistService.getAll();
         dispatch(setPsychologists(psychologists));
