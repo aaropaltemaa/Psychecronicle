@@ -2,18 +2,17 @@ POST http://localhost:3001/api/psychologists
 Content-Type: application/json
 
 {
-  "name": "Jean Piaget",
-  "biography": "Jean Piaget was a Swiss psychologist known for his work on child development. Piaget's theory of cognitive development and epistemological view are together called 'genetic epistemology'.",
+  "name": "Carl Jung",
+  "biography": "Carl Gustav Jung was a Swiss psychiatrist and psychoanalyst who founded analytical psychology. Jung's work was influential in the fields of psychiatry, anthropology, archaeology, literature, philosophy, and religious studies.",
   "nationality": "Swiss",
-  "birthDate": "1896-08-09",
-  "deathDate": "1980-09-16",
-  "field": "Developmental Psychology",
-  "contribution": "Cognitive Development Theory",
+  "birthDate": "1875-07-26",
+  "deathDate": "1961-06-06",
+  "field": "Analytical psychology",
+  "contribution": "Jung's work was influential in the fields of psychiatry, anthropology, archaeology, literature, philosophy, and religious studies.",
   "quotes": [
-      "Play is the work of childhood.",
-      "Intelligence is what you use when you don't know what to do.",
-      "What we see changes what we know. What we know changes what we see."
+    "The meeting of two personalities is like the contact of two chemical substances: if there is any reaction, both are transformed.",
+    "I am not what happened to me, I am what I choose to become.",
+    "Everything that irritates us about others can lead us to an understanding of ourselves."
   ],
-  "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Jean_Piaget_1950s.jpg",
-  "wikipediaUrl": "https://en.wikipedia.org/wiki/Jean_Piaget"
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Carl_Jung"
 }

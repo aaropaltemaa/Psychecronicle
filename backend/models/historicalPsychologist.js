@@ -9,6 +9,18 @@ const historicalPsychologistSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  life: [
+    {
+      event1: String,
+      event2: String,
+      event3: String,
+      event4: String,
+      event5: String,
+      event6: String,
+      event7: String,
+      event8: String,
+    },
+  ],
   nationality: {
     type: String,
     required: true,
@@ -29,9 +41,6 @@ const historicalPsychologistSchema = new mongoose.Schema({
   },
   quotes: {
     type: [String], // Array of quotes by the psychologist
-  },
-  image: {
-    type: String, // URL or path to an image of the psychologist
   },
   wikipediaUrl: {
     type: String, // Link to Wikipedia page or other relevant source

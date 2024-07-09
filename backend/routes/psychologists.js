@@ -33,13 +33,13 @@ psychologistRouter.post("/", async (request, response) => {
   const psychologist = new HistoricalPsychologist({
     name: body.name,
     biography: body.biography,
+    life: body.life,
     nationality: body.nationality,
     birthDate: body.birthDate,
     deathDate: body.deathDate,
     field: body.field,
     contribution: body.contribution,
     quotes: body.quotes,
-    image: body.image,
     wikipediaUrl: body.wikipediaUrl,
   });
 
@@ -49,6 +49,23 @@ psychologistRouter.post("/", async (request, response) => {
   } catch (error) {
     response.status(400).send({ error: error.message });
   }
+});
+
+psychologistRouter.put("/:id", async (request, response) => {
+  const body = request.body;
+
+  const psychologist = {
+    name: body.name,
+    biography: body.biography,
+    life: body.life,
+  };
+
+  const updatedPsychologist = await HistoricalPsychologist.findByIdAndUpdate(
+    request.params.id,
+    psychologist,
+    { new: true }
+  );
+  response.json(updatedPsychologist);
 });
 
 module.exports = psychologistRouter;
