@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Pioneers from './components/Containers/Pioneers';
 import Pioneer from './components/Containers/Pioneer';
 import SearchBar from './components/Containers/SearchBar';
+import ConceptList from './components/Containers/Concepts/ConceptList';
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/psychologists" element={<Pioneers />} />
             <Route path="/psychologists/:id" element={<Pioneer />} />
             <Route path="/search" element={<SearchBar />} />
+            <Route path="/concepts" element={<ConceptList />} />
           </Routes>
         </div>
       </Router>
