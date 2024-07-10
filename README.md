@@ -16,7 +16,9 @@ Psychecronicle is an application that aims to provide a comprehensive database o
 ## To do list
 - **Pagination**
 - **Search and filter**
+- **Concepts**
 - **Most viewed psychologist drawer**
+- **Figure out where the double object id error is coming from**
   
 
 
