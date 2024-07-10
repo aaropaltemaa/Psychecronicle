@@ -9,7 +9,7 @@ Psychecronicle is an application that aims to provide a comprehensive database o
 
 ## Technologies Used
 
-- **Frontend**: [React](https://reactjs.org/)
+- **Frontend**: [React](https://reactjs.org/) with [Redux](https://redux.js.org/)
 - **Backend**: [Node.js](https://nodejs.org/) with [Express](https://expressjs.com/)
 - **Database**: [MongoDB](https://www.mongodb.com/)
 
