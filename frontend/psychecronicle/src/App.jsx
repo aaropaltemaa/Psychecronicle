@@ -8,6 +8,7 @@ import Pioneer from './components/Containers/Pioneer';
 import SearchBar from './components/Containers/SearchBar';
 
 const App = () => {
+
   return (
     <ThemeProvider theme={theme}>
       <Router>

@@ -22,6 +22,7 @@ export const initializePsychologists = () => {
     return async dispatch => {
         const psychologists = await psychologistService.getAll();
         dispatch(setPsychologists(psychologists));
+        return psychologists;
     };
 };
 
