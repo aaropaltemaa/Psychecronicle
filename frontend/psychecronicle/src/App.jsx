@@ -5,6 +5,7 @@ import MenuHeader from './components/UI/MenuHeader';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Pioneers from './components/Containers/Pioneers';
 import Pioneer from './components/Containers/Pioneer';
+import SearchBar from './components/Containers/SearchBar';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
             <Route path="/" element={<Menu />} />
             <Route path="/psychologists" element={<Pioneers />} />
             <Route path="/psychologists/:id" element={<Pioneer />} />
+            <Route path="/search" element={<SearchBar />} />
           </Routes>
         </div>
       </Router>

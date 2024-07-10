@@ -56,11 +56,12 @@ const theme = createTheme({
         MuiCard: {
             styleOverrides: {
                 root: {
-                    padding: '20px',
+                    padding: '150px',
                     margin: '20px',
                     backgroundColor: blue[50],
                     marginRight: 600,
-                    boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)',
+                    borderRadius: 100,
+                    boxShadow: '1px 1px 5px rgba(0,0,0,0.2)'
                 },
             },
         },
@@ -70,6 +71,21 @@ const theme = createTheme({
                     width: '100%',
                     maxWidth: 500,
                     bgcolor: 'background.paper',
+                },
+            },
+        },
+        MuiAutocomplete: {
+            styleOverrides: {
+                root: {
+                    width: 450,
+                    height: 40,
+                    backgroundColor: "white",
+                    borderRadius: 10,
+                    boxShadow: "none",
+                    position: 'fixed',
+                    top: 400,
+                    left: 335,
+                    zIndex: 9999,
                 },
             },
         },
