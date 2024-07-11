@@ -19,6 +19,9 @@ const historicalPsychologistSchema = new mongoose.Schema({
       event6: String,
       event7: String,
       event8: String,
+      event9: String,
+      event10: String,
+      event11: String,
     },
   ],
   nationality: {
