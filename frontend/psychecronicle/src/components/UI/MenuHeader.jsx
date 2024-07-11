@@ -45,6 +45,13 @@ const MenuHeader = () => {
                     >
                         Concepts
                     </Button>
+                    <Button
+                        color="primary"
+                        component={Link}
+                        to="/flashcards"
+                    >
+                        Flashcards
+                    </Button>
                 </div>
             </Toolbar>
         </AppBar>

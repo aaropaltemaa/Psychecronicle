@@ -7,6 +7,7 @@ import Pioneers from './components/Containers/Pioneers';
 import Pioneer from './components/Containers/Pioneer';
 import SearchBar from './components/Containers/SearchBar';
 import ConceptList from './components/Containers/Concepts/ConceptList';
+import FlashCardPage from './components/Containers/Concepts/FlashCardPage';
 
 const App = () => {
 
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/psychologists/:id" element={<Pioneer />} />
             <Route path="/search" element={<SearchBar />} />
             <Route path="/concepts" element={<ConceptList />} />
+            <Route path="/flashcards" element={<FlashCardPage />} />
           </Routes>
         </div>
       </Router>
