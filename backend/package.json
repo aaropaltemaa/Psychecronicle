@@ -7,7 +7,7 @@
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
-    "build:ui": "rm -rf dist && cd ../frontend/psychecronicle && npm run build && cp -r dist ../backend",
+    "build:ui": "rmdir /s /q dist && cd ../frontend/psychecronicle && npm run build && mkdir ..\\backend\\dist && xcopy /e /i /y dist ..\\backend\\dist",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "author": "Aaro Paltemaa",
