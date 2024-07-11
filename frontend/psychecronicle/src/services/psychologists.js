@@ -8,7 +8,7 @@ const getAll = async () => {
 };
 
 const getQuotes = async () => {
-  const response = await axios.get(`${baseUrl}/psychologists/quotes`);
+  const response = await axios.get(`${baseUrl}/quotes`);
   return response.data;
 };
 
