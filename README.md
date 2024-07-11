@@ -6,6 +6,7 @@ Psychecronicle is an application that aims to provide a comprehensive database o
 
 - **Search Psychologists**: Easily search for psychologists by name, era, or area of expertise.
 - **Explore Biographies**: Access detailed biographical information and timelines of prominent psychologists.
+- **Practice concepts with flascards**
 
 ## Technologies Used
 
