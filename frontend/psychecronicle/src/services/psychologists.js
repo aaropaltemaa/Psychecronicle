@@ -1,5 +1,4 @@
 import axios from "axios";
-import { apiBaseUrl } from "../../constants";
 
 const baseUrl = "/api/psychologists";
 
@@ -9,7 +8,7 @@ const getAll = async () => {
 };
 
 const getQuotes = async () => {
-  const response = await axios.get(`${apiBaseUrl}/psychologists/quotes`);
+  const response = await axios.get(`${baseUrl}/psychologists/quotes`);
   return response.data;
 };
 
