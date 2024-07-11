@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Typography, Grid } from "@mui/material";
 import allConcepts from "./AllConcepts";
 import { blue } from "@mui/material/colors";
 
@@ -17,14 +17,14 @@ const OpeningText = () => {
 
 const Concepts = () => {
     return (
-        <div>
-            {Object.entries(allConcepts).map(([concept, definition]) => (
-                <div key={concept} style={{ marginBottom: '10px', borderRadius: '5px' }}>
-                    <h3 style={{ backgroundColor: blue[400], color: 'white', padding: '10px', marginRight: 1400, borderRadius: '0px 300px 0 0' }}>{concept}</h3>
-                    <Typography variant="h6" style={{ padding: '10px', marginLeft: -10 }}>{definition}</Typography>
-                </div>
+        <Grid container spacing={8}>
+            {Object.entries(allConcepts).map(([concept, definition], index) => (
+                <Grid item xs={5} key={index} style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+                    <h3 style={{ backgroundColor: blue[400], color: 'white', padding: '10px', borderRadius: '0px 300px 0 0', width: '20%' }}>{concept}</h3>
+                    <Typography variant="h6" style={{ padding: '10px' }}>{definition}</Typography>
+                </Grid>
             ))}
-        </div>
+        </Grid>
     );
 };
 
