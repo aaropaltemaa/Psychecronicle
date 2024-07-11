@@ -11,9 +11,6 @@ const psychologistsSlice = createSlice({
         setOne: (state, action) => {
             return [...state, action.payload];
         },
-        setPage: (state, action) => {
-            return action.payload;
-        }
     }
 });
 
