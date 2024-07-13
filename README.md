@@ -16,10 +16,9 @@ Psychecronicle is an application that aims to provide a comprehensive database o
 - **Backend**: [Node.js](https://nodejs.org/) with [Express](https://expressjs.com/)
 - **Database**: [MongoDB](https://www.mongodb.com/)
 
-## To do list
-- **Pagination**
-- **Most viewed psychologist drawer**
-- **Figure out where the double object id error is coming from**
+- **Pagination**: Implement pagination for psychologist listings.
+- **Most Viewed Psychologist Drawer**: Feature the most viewed psychologists in a dedicated drawer.
+- **Debugging**: Resolve the double object ID error.
   
 
 
