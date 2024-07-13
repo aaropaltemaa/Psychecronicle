@@ -26,6 +26,7 @@ By building Psychechronicle, I aimed to create a tool that not only helps me stu
 
 ## To Do List
 
+- **Add more psychologists to the database**
 - **Pagination**: Implement pagination for psychologist listings.
 - **Most Viewed Psychologist Drawer**: Feature the most viewed psychologists in a dedicated drawer.
 - **Debugging**: Resolve the double object ID error.
