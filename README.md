@@ -2,7 +2,7 @@
 
 Psychecronicle is an application that aims to provide a comprehensive database of historical psychologists, highlighting their contributions to the field of psychology over time.
 
-**https://psychecronicle.onrender.com**
+**[https://psychechronicle.onrender.com](https://psychechronicle.onrender.com)**
 
 ## Features
 
