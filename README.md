@@ -6,7 +6,11 @@ Psychecronicle is an application that aims to provide a comprehensive database o
 
 ## Motivation
 
-Psychechronicle was born out of a personal need to succeed in my upcoming psychology matriculation exams. As I prepare for these important tests, I wanted a way to immerse myself deeply in the subject matter. Creating this web application allowed me to combine my passion for web development with my drive to excel in psychology. By building Psychechronicle, I aimed to create a tool that not only helps me study and retain information but also serves as a resource for others who share a fascination with the history and concepts of psychology. This project represents my commitment to academic success and my enthusiasm for learning in an engaging, hands-on way.
+Psychechronicle was born out of a personal need to succeed in my upcoming psychology matriculation exams. As I prepare for these important tests, I wanted a way to immerse myself deeply in the subject matter. 
+
+Creating this web application allowed me to combine my passion for web development with my drive to excel in psychology. 
+
+By building Psychechronicle, I aimed to create a tool that not only helps me study and retain information but also serves as a resource for others who share a fascination with the history and concepts of psychology. This project represents my commitment to academic success and my enthusiasm for learning in an engaging, hands-on way.
 
 ## Features
 
